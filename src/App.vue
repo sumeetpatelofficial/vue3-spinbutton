@@ -5,5 +5,8 @@ import SpinButton from './components/SpinButton.vue';
 </script>
 
 <template>
-  <SpinButton :start="0" />
+  <SpinButton :start="0">
+    <template #increment>less</template>
+    <template #decrement>more</template>
+  </SpinButton>
 </template>
